@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { format } from "date-fns";
 import { useAPI } from "../components/useAPI";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 const buttonsData = [
   "Cancellation Flexibility",
@@ -149,6 +150,10 @@ function Search({ searchResults }) {
             total={"£ 157"}
           />
         </div>
+      </section>
+
+      <section className="hidden xl:inline-flex xl:min-w-[600px]">
+        <Map />
       </section>
     </main>
   );
